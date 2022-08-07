@@ -1,212 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Custom style-->
-  <link rel="stylesheet" href="style.css">
-  <title>Francisco Quezada</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Custom style-->
+	<link rel="stylesheet" href="style.css">
+	<!--Font Awesome JS-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" integrity="sha384-eoTu3+HydHRBIjnCVwsFyCpUDZHZSFKEJD0mc3ZqSBSb6YhZzRHeiomAUWCstIWo" crossorigin="anonymous">	<title>Francisco Quezada</title>
 </head>
-
 <body>
 
-  <div class="container">
+	<div id="nav" class="pos-fixed center w-100 text-center bg-white b-bottom top-0">
+		<ul class="d-inline-block pos-relative text-style-none">
+			<li class="float-left px-lg py-md"><a class="text-style-none text-sm c-primary-dark" href="#home">Inicio</a></li>
+			<li class="float-left px-lg py-md"><a class="text-style-none text-sm c-primary-dark" href="#about">Habilidades</a></li>
+			<li class="float-left px-lg py-md"><a class="text-style-none text-sm c-primary-dark" href="#playground">Mi codigo</a></li>
+			<li class="float-left px-lg py-md"><a class="text-style-none text-sm c-primary-dark" href="#works">Trabajos</a></li>
+		</ul>
+	</div>
 
-    <div id="nav" class="nav">
-      <ul>
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#about">Sobre Mi</a></li>
-        <li><a href="#portfolio">Proyectos</a></li>
-      </ul>
-    </div>
+	<div class="d-block center">
 
-    <div id="home" class="section home">
-      <div class="content">
-        <img src="icons/developer.svg" alt="">
-        <h1><span>Francisco Quezada</span></h1>
-        <h2>Desarrollador Web FullStack</h2>
-        <br>
-        <div class="rrss">
-          <div>
-            <a target="_blank" href="https://www.linkedin.com/in/francisco-quezada-geldres">
-              <img src="icons/linkedin.svg" alt="">
-            </a>
-          </div>
-          <div>
-            <a target="_blank" href="https://github.com/fquezadageldres">
-              <img src="icons/github.svg" alt="">
-            </a>
-          </div>
-          <div>
-            <a target="_blank" href="https://twitter.com/fquezadageldres">
-              <img src="icons/twitter.svg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+		<div class="bg-dark fake-section"></div>
+		<div id="home" class="h-home d-flex center bg-dark h-min-700px">
+			<div class="d-block center w-700px">
+				<div class="w-700px"><img class="w-250px b-radius-50" src="./images/perfil.jpeg"></div>
+				<div class="w-700px">
+					<p class="text-xl c-secondary-light">Francisco Quezada</p>
+					<p class="pt-sm text-home c-primary-dark">Desarrollador web full-stack ssr. con 4 años de experiencia 
+						en proyectos y creación de plataformas y aplicaciones empresariales.</p>
+					<div class="d-flex center">
+						<div class="p-sm pt-sm">
+							<a class="text-style-none c-linkedin text-md" rel="nofollow noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/francisco-quezada-geldres">
+								<i class="bi bi-linkedin"></i>
+							</a>
+						</div>
+						<div class="p-sm pt-sm">
+							<a class="text-style-none c-github text-md" rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/fquezadageldres">
+								<i class="bi bi-github"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bounce pos-absolute text-lg c-primary-dark"><i class="bi bi-arrow-down-short"></i></div>
+		</div>
 
-    <div id="about" class="section about">
-      <div class="content">
-        <h1>Sobre Mi</h1>
-        <br>
-        <p>¡Hola!, me llamo Francisco Quezada y soy desarrollador web full-stack, 
-          tengo dos años de experiencia codeando y otros dos participando en procesos
-          de implementación de sistemas empresariales usando metodologias agiles 
-        </p>
-        <br>
-        <br>
-        <h3>Algunas tecnologias que utilizo</h3>
-        <div class="tecnologies">
-          <div>
-            <img src="icons/javascript.svg" alt="">
-            <p>Javascript</p>
-          </div>
-          <div>
-            <img src="icons/typescript.svg" alt="">
-            <p>Typescript</p>
-          </div>
-          <div>
-            <img src="icons/html.svg" alt="">
-            <p>Html</p>
-          </div>
-          <div>
-            <img src="icons/css.svg" alt="">
-            <p>Css</p>
-          </div>
-          <div>
-            <img src="icons/redis.svg" alt="">
-            <p>Redis</p>
-          </div>
-          <div>
-            <img src="icons/nodejs.svg" alt="">
-            <p>NodeJS</p>
-          </div>
-          <div>
-            <img src="icons/postgresql.svg" alt="">
-            <p>PostgreSQL</p>
-          </div>
-        </div>
-        <br>
-        <br>
-        <h3>Metodologias</h3>
-        <div class="metodologies">
-          <div>
-            <img src="icons/git.svg" alt="">
-            <p>Git-flow</p>
-          </div>
-          <div>
-            <img src="icons/scrum.svg" alt="">
-            <p>Scrum</p>
-          </div>
-          <div>
-            <img src="icons/kanban.svg" alt="">
-            <p>Kanban</p>
-          </div>
-        </div>
-      </div>
-    </div>
+		<div id="about" class="d-flex center py-xl">
+			<div class="d-block center w-700px">
+				<div class="text-lg c-secondary-light"><p>Habilidades</p></div>
+				<div class="pt-md">
+					<p class="text-md c-primary-dark">Tecnologias</p>
+					<p class="text-sm c-primary-dark">En mi trabajo como desarrollador web he generado codigo en diversos <span>lenguajes de programación y tecnologias,</span> 
+						siendo <span>javascript</span> mi especialidad y mas tecnicamente los stacks de desarrollo <span>MERN y PERN</span></p>
+				</div>
+				<div id="tecnologies" class="b-bottom pb-lg center">
+					<div class="d-flex pt-sm center">
+						<div class="px-xs"><img class="w-50px" src="icons/javascript.svg" alt="Javascript"><p class="text-xs c-primary-dark">Javascript</p></div>
+						<div class="px-xs"><img class="w-50px" src="icons/typescript.svg" alt="Typescript"><p class="text-xs c-primary-dark">Typescript</p></div>
+						<div class="px-xs"><img class="w-50px" src="icons/html.svg" alt="Html"><p class="text-xs c-primary-dark">Html</p></div>
+						<div class="px-xs"><img class="w-50px" src="icons/css.svg" alt="Css"><p class="text-xs c-primary-dark">Css</p></div>
+						<div class="px-xs"><img class="w-50px" src="icons/nodejs.svg" alt="NodeJS"><p class="text-xs c-primary-dark">NodeJS</p></div>
+					</div>
+					<div class="d-flex pt-sm center">
+						<div class="px-xs"><img class="w-50px" src="icons/mongo.svg" alt="MongoDB"><p class="text-xs c-primary-dark">MongoDB</p></div>
+						<div class="px-xs"><img class="w-50px" src="icons/react.svg" alt="React"><p class="text-xs c-primary-dark">React</p></div>
+						<div class="px-xs"><img class="w-50px" src="icons/postgresql.svg" alt="PostgreSQL"><p class="text-xs c-primary-dark">PostgreSQL</p></div>
+						<div class="px-xs"><img class="w-50px" src="icons/redis.svg" alt="Redis"><p class="text-xs c-primary-dark">Redis</p></div>
+					</div>
+				</div>
+				<div class="pt-md">
+					<h3 class="text-md c-primary-dark">Metodologias</h3>
+					<h4 class="text-sm c-primary-dark">Por otro lado, en metodologias de trabajo, las favoritas de cada proyecto son las <span>metedologias agiles,</span> asi como el 
+					control de versionamiento de codigo y su flujo con <span>Git-flow.</span></h4>
+				</div>
+				<div class="d-flex center py-sm">
+					<div class="px-xs"><img class="w-50px" src="icons/git.svg" alt=""><p class="text-xs c-primary-dark">Git-flow</p></div>
+					<div class="px-xs"><img class="w-50px" src="icons/scrum.svg" alt=""><p class="text-xs c-primary-dark">Scrum</p></div>
+					<div class="px-xs"><img class="w-50px" src="icons/kanban.svg" alt=""><p class="text-xs c-primary-dark">Kanban</p></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="playground" class="d-flex center py-xl bg-dark hidden-on-mobile">
+			<div class="d-block center w-playground">
+				<div class="text-lg c-secondary-light"><p>Mi codigo</p></div>
+				<div class="d-flex pt-sm center">
+					<div class="pt-md px-sm w-220px">
+						<div class="c-primary-dark line-height-0">
+							<i class="text-md line-height-0 bi bi-hdd-stack"></i><br><span>Backend</span>
+						</div>
+					</div>
+					<div class="pt-md px-sm w-220px">
+						<div class="c-primary-dark line-height-0">
+							<i class="text-md line-height-0 bi bi-display"></i><br><span>Frontend</span>
+						</div>
+					</div>
+					<div class="pt-md px-sm w-220px">
+						<div class="c-primary-dark line-height-0">
+							<i class="text-md line-height-0 bi bi-code-slash"></i><br><span>POO</span>
+						</div>
+					</div>
+				</div>
+				<!-- linea 1 -->
+				<div class="d-flex center">
+					<div class="m-xs w-220px">
+						<div class="c-primary-dark border b-radius-5px line-height-0 h-60px">
+						</div>
+					</div>
+					<div class="m-xs w-220px">
+						<div class="c-primary-dark border b-radius-5px line-height-0 h-60px">
+						</div>
+					</div>
+					<div class="m-xs w-220px">
+						<div class="c-primary-dark border b-radius-5px line-height-0 h-60px">
+						</div>
+					</div>
+				</div>
+				<!-- linea 2 -->
+				<div class="d-flex center">
+					<div class="m-xs w-220px">
+						<div class="c-primary-dark border b-radius-5px line-height-0 h-60px">
+						</div>
+					</div>
+					<div class="m-xs w-220px">
+						<div class="c-primary-dark border b-radius-5px line-height-0 h-60px">
+						</div>
+					</div>
+					<div class="m-xs w-220px">
+						<div class="c-primary-dark border b-radius-5px line-height-0 h-60px">
+						</div>
+					</div>
+				</div>
+				<!-- linea 3 -->
+				<div class="d-flex center">
+					<div class="m-xs w-220px">
+						<div class="c-primary-dark border b-radius-5px line-height-0 h-60px">
+						</div>
+					</div>
+					<div class="m-xs w-220px">
+						<div class="c-primary-dark border b-radius-5px line-height-0 h-60px">
+						</div>
+					</div>
+					<div class="m-xs w-220px">
+						<div class="c-primary-dark border b-radius-5px line-height-0 h-60px">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		<div id="works" class="d-flex center py-xl">
+			<div class="d-block center w-700px">
+				<div class="text-lg c-secondary-light"><p>Trabajos</p></div>
+				<div class="d-flex pt-md center">
+					<div class="py-sm hover-scale">
+						<div class="">
+							<a class="text-style-none" rel="nofollow noopener noreferrer" target="_blank" href="https://www.multi-xsalmon.com/">
+								<div class="b-bottom px-md">
+									<img class="w-180px" src="./images/multiexp.png" alt="">
+								</div>
+								<div class="py-sm c-primary-dark">
+									<div class="text-sm"><p>Multi X</p></div>
+									<div class="text-xs"><p>2017 - 2019</p></div>
+									<div class="text-xs"><p>Analista de sistemas</p></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="py-sm hover-scale">
+						<div class="">
+							<a class="text-style-none" rel="nofollow noopener noreferrer" target="_blank" href="https://www.multi-xsalmon.com/">
+								<div class="b-bottom px-md">
+									<img class="w-180px" src="./images/telsur.png" alt="">
+								</div>
+								<div class="py-sm c-primary-dark">
+									<div class="text-sm"><p>Teslur GTD</p></div>
+									<div class="text-xs"><p>2020 - 2021</p></div>
+									<div class="text-xs"><p>Desarrollador fullstack</p></div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="py-sm hover-scale">
+						<div class="">
+							<a class="text-style-none" rel="nofollow noopener noreferrer" target="_blank" href="https://www.multi-xsalmon.com/">
+								<div class="b-bottom px-md">
+									<img class="w-180px" src="./images/luminux.png" alt="">
+								</div>
+								<div class="py-sm c-primary-dark">
+									<div class="text-sm"><p>Luminux</p></div>
+									<div class="text-xs"><p>2021 - 2022</p></div>
+									<div class="text-xs"><p>Ingeniero de Software</p></div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <div id="portfolio" class="section portfolio">
-      <div class="content">
-        <h1>Proyectos</h1>
-        <br>
-        <br>
+		<div id="footer" class="d-flex bg-dark center py-md b-top ">
+			<div class="text-sm c-primary-light"><p>Francisco Quezada G. 2022</p></div>
+		</div>
 
-        <div class="card">
-          <div class="overlayer">
-            <div class="description">
-              <h2>Blind Bullet</h2>
-              <p>Landing page crowdfunding</p>
-              <br>
-              <div class="tecnologies">
-                <img src="icons/javascript.svg" alt="">
-                <img src="icons/jquery.svg" alt="">
-                <img src="icons/css.svg" alt="">
-                <img src="icons/html.svg" alt="">
-              </div>
-              <br>
-              <a target="_blank" href="https://github.com/fquezadageldres/blindbullet.landingpage.git">
-                <img src="icons/github.svg" alt="">
-                Ver codigo en github
-              </a>
-              <a target="_blank" href="https://blindbullet.com">
-                <img src="icons/link.svg" alt="">
-                Ver pagina web
-              </a>
-            </div>
-          </div>
-          <img src="images/blindbullet.png" alt="">
-        </div>
+	</div>
 
-        <br>
 
-        <div class="card">
-          <div class="overlayer">
-            <div class="description">
-              <h2>Microservicios</h2>
-              <p>Sistema basado en microservicios y colas de redis</p>
-              <br>
-              <div class="tecnologies">
-                <img src="icons/typescript.svg" alt="">
-                <img src="icons/react.svg" alt="">
-                <img src="icons/redis.svg" alt="">
-                <img src="icons/nodejs.svg" alt="">
-                <img src="icons/css.svg" alt="">
-                <img src="icons/html.svg" alt="">
-              </div>
-              <br>
-              <a target="_blank" href="https://github.com/fquezadageldres/demo.microservices.git">
-                <img src="icons/github.svg" alt="">
-                Ver codigo en github
-              </a>
-            </div>
-          </div>
-          <img src="images/microservicios.png" alt="">
-        </div>
+	
+	<!--Custom JS-->
+	<script src="index.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QGX5HX94J7"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-        <br>
-
-        <div class="card">
-          <div class="overlayer">
-            <div class="description">
-              <h2>Tienda online</h2>
-              <br>
-              <div class="tecnologies">
-                <img src="icons/python.svg" alt="">
-                <img src="icons/django.svg" alt="">
-                <img src="icons/postgresql.svg" alt="">
-                <img src="icons/css.svg" alt="">
-                <img src="icons/html.svg" alt="">
-              </div>
-              <br>
-              <a target="_blank" href="https://github.com/fquezadageldres/demo.online-store.git">
-                <img src="icons/github.svg" alt="">
-                Ver codigo en github
-              </a>
-            </div>
-          </div>
-          <img src="images/online_store.png" alt="">
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-  
-  <!--Custom JS-->
-  <script src="index.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QGX5HX94J7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QGX5HX94J7');
-</script>
-
+		gtag('config', 'G-QGX5HX94J7');
+	</script>
 </body>
-
 </html>
