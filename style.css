@@ -21,14 +21,22 @@
     --border: #e6eaf2;
     --border-dev: #909090;
     --green-light:#00c150;
+    --green-dark:#007e34;
+    --orange-light: #ed9a00;
+    --orange-dark: #7b5000;
 }
 
 /* Develop */
 
 .border { border: 1px solid var(--border-dev); }
 .border-bottom { border-bottom: 1px solid var(--primary-light); }
+
 .blue { color: var(--secondary-light) }
+.blue-dark { color: var(--secondary-dark) }
 .green { color: var(--green-light) }
+.green-dark { color: var(--green-dark) }
+.orange { color: var(--orange-light) }
+.orange-dark { color: var(--orange-dark) }
 
 /* Globals */
 
@@ -102,9 +110,23 @@ h1, h2 {
 
 .content {
     display: block;
-    margin: 0 20px;
+    margin: 0 10px;
     min-height: 500px;
     min-width: 100px;
+    width: 1200px;
+}
+
+.content-title h1 {
+    font-size: 3em;
+}
+
+.content-body h2 {
+    color: var(--primary-dark)
+}
+
+.content-body {
+    display: flex;
+    margin-top:20px
 }
 
 /* Sections */
@@ -112,7 +134,6 @@ h1, h2 {
 #home .content {
     display: flex;
     flex-direction: column;
-    width: 1200px;
     justify-content: center;
     align-items: center;
 }
@@ -198,42 +219,27 @@ h1, h2 {
     padding: 80px 0;
 }
 
-#skills .content {
-    width: 1200px;
-}
-
-#skills .content-title h1 {
-    font-size: 3em;
-}
-
-#skills .content-body h2 {
-    color: var(--primary-dark)
-}
-
-#skills .content-body {
-    display: flex;
-    margin-top:20px
-}
-
 #skills .content-body > * {
-    margin:5px;
-    width: 500px;
-    padding: 30px 30px;
-    border:1px solid var(--primary-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 30px 20px;
     border-radius: 10px;
 }
 
 #skills .title {
-    padding: 10px 0;
+    margin:10px 0;
     text-align: center;
 }
 
 #skills .title p {
     font-size: .9em;
+    color: var(--primary-dark)
 }
 
 #skills .icons {
-    margin-top: 15px;
+    margin: 10px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -241,7 +247,7 @@ h1, h2 {
 }
 
 #skills .icon {
-    margin: 5px 7px;
+    margin: 5px 10px;
     display: block;
     text-align: center;
     line-height: 1;
@@ -262,39 +268,125 @@ h1, h2 {
     padding: 8px 0;
 }
 
-#skills .line {
-    border-bottom: 1px solid var(--primary-light);
-    margin: 5px 0;
-}
-
 #skills .grade .detail {
     margin-left: 10px;
 }
 
 #skills .grade .detail p {
-    font-size: .9em;
+    font-size: 1em;
     text-align: left;
     line-height: .5;
 }
 
 #skills .grade .detail small {
-    font-size: .7em;
+    font-size: .8em;
     text-align: left;
     line-height: 0;
 }
 
-
-
 #skills .grade img { height: 48px }
 
 #skills .grade img.small {
-    margin: 0 8px;
-    height: 36px;
+    margin: 0 11px;
+    height: 30px;
 }
 
-/* Works */
-
-#works {
-    border-top: 1px solid var(--primary-light);
+#skills .line {
+    position: relative;
+    border-bottom: 1px solid var(--primary-light);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    margin: 0 0 15px;
 }
+
+/* Portfolio */
+
+#portfolio {
+    height: auto;
+    padding: 80px 0;
+}
+
+#portfolio .content-body {
+    margin-top: 60px;
+    gap: 10px;
+}
+
+#portfolio .gallery {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+#portfolio .project {
+    width: 393px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-light)
+}
+
+#portfolio .list {
+    display: block;
+    width: 328px;
+    border-radius: 10px;
+    padding: 0 25px 0;
+}
+
+#portfolio .list h2 {
+    text-align: left;
+    border-bottom: 1px solid var(--primary-light);
+}
+
+#portfolio .items {
+    margin: 15px 0;
+    overflow-y: scroll;
+    max-height: 270px;
+    scrollbar-color: transparent;
+}
+
+#portfolio .items::-webkit-scrollbar {
+    width: 8px;               
+}
+#portfolio .items::-webkit-scrollbar-track {
+    background: transparent;      
+}
+#portfolio .items::-webkit-scrollbar-thumb {
+    background-color: var(--primary-medium);    
+    border-radius: 20px;    
+}
+
+#portfolio .item {
+    margin: 5px 5px 0 0;
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid var(--primary-light)
+}
+
+#portfolio .item i {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#portfolio .item .info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolio .item .info p {
+    text-align: left;
+    line-height: 1;
+}
+
+#portfolio .item .info small {
+    text-align: left;
+    font-size: .8em;
+}
+
 
