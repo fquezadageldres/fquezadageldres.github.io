@@ -13,67 +13,68 @@
     <div class="container">
 
         <div id="nav">
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#portfolio">Portafolio</a></li>
-            </ul>
+            <div>
+                <ul>
+                    <li id="brand"><a class="c-highlight" href="#home">FQ</a></li>
+                    <li id="li-home" class="active"><a href="#home"><i class="bi bi-house-door"></i><span id="span-home">Inicio</span></a></li>
+                    <li id="li-skills"><a href="#skills"><i class="bi bi-journal-bookmark"></i><span id="span-skills">Habilidades</span></a></li>
+                    <li id="li-portfolio"><a href="#portfolio"><i class="bi bi-folder2-open"></i><span id="span-portfolio">Portafolio</span></a></li>
+                    <li id="li-works"><a href="#works"><i class="bi bi-building"></i><span id="span-works">Trabajos</span></a></li>
+                </ul>
+            </div>
+            <div class="options">
+                <div class="contact-me">
+                    <small>Contacto</small>
+                    <a class="c-link" rel="nofollow noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/francisco-quezada-geldres"><i class="bi bi-linkedin"></i><div class="linkedin"></div></a>
+                    <a class="c-link" rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/fquezadageldres"><i class="bi bi-github"></i><div></div></a>
+                </div>
+                <input type="checkbox" id="switch"/>
+                <label for="switch">
+                    <i class="c-text bi bi-sun-fill"></i>
+                    <i class="c-text bi bi-moon-fill"></i>
+                </label>
+            </div>
         </div>
 
         <div id="home" class="section">
             <div class="content">
                 <img src="./images/perfil.jpeg" alt="">
-                <h1 class="blue">Francisco <span class="p-medium">Quezada G.</span></h1>
-                <p>Desarrollador web full-stack ssr. especializado en proyectos de 
-                    creación y mejora de plataformas y aplicaciones empresariales.
-                </p>
-                <div class="contact-me">
-                    <a class="c-linkedin" rel="nofollow noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/francisco-quezada-geldres">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a class="c-github" rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/fquezadageldres">
-                        <i class="bi bi-github"></i>
-                    </a>
-                </div>
+                <h1 class="c-highlight">Francisco <span class="c-text">Quezada G.</span></h1>
+                <p>Desarrollador web full-stack ssr. especializado en proyectos de creación y mejora de plataformas y aplicaciones empresariales.</p>
             </div>
-            <div class="arrow-bounce"><i class="blue bi bi-arrow-down"></i></div>
+            <i class="arrow-bounce blue bi bi-arrow-down"></i>
         </div>
 
         <div id="skills" class="section">
             <div class="content">
-                <h1 class="blue">Habilidades</h1>
-                <div class="content-box">
+                <h1 class="c-highlight">Habilidades</h1>
+                <div class="content-body">
 
                     <div id="studies" class="box">
                         <h2>Formación</h2>
                         <p>Titulos, diplomas y cursos</p>
                         <div class="items">
-
                             <div class="item">
-                                <div class="icon"><img src="icons/diploma_2.svg" alt="Html"></div>
+                                <div class="icon small"><img src="icons/diploma_1.svg" alt="Html"></div>
                                 <div class="info">
-                                    <p class="bold">Ingenieria en Administración</p>
-                                    <small class="blue bold">Titulo universitario U. San Sebastian</small>
+                                    <p>Ingenieria en Administración</p>
+                                    <small class="c-text-soft">Titulo universitario U. San Sebastian</small>
                                 </div>
                             </div>
-
                             <div class="item">
                                 <div class="icon small"><img src="icons/diploma_1.svg" alt="Html"></div>
                                 <div class="info">
                                     <p>Desarrollo Web HTML & CSS</p>
-                                    <small class="green bold">Curso online Google</small>
+                                    <small class="c-text-soft">Curso online Google</small>
                                 </div>
                             </div>
-
-
                             <div class="item">
                                 <div class="icon small"><img src="icons/diploma_1.svg" alt="Html"></div>
                                 <div class="info">
                                     <p>JavaScript Algorithms/Data Structures</p>
-                                    <small class="green bold">Curso online FreeCodeCamp</small>
+                                    <small class="c-text-soft">Curso online FreeCodeCamp</small>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -87,7 +88,7 @@
                             <div class="icon"><img src="icons/typescript.svg" alt="Typescript"><small>Typescript</small></div>
                             <div class="icon"><img src="icons/nodejs.svg" alt="Node"><small>NodeJS</small></div>
                             <div class="icon"><img src="icons/react.svg" alt="React"><small>ReactJS</small></div>
-                            <div class="icon"><img style="width: 32px;" src="icons/postgresql.svg" alt="PostgreSQL"><small>PostgreSQL</small></div>
+                            <div class="icon"><img src="icons/postgresql.svg" alt="PostgreSQL"><small>PostgreSQL</small></div>
                             <div class="icon"><img src="icons/redis.svg" alt="Redis"><small>Redis</small></div>
                             <div class="icon"><img src="icons/mongo.svg" alt="MongoDB"><small>MongoDB</small></div>
                         </div>
@@ -108,63 +109,65 @@
         </div>
         <div id="portfolio" class="section">
             <div class="content">
-                <h1 class="blue">Portafolio</h1>
-                <div class="content-box">
+                <h1 class="c-highlight">Portafolio</h1>
+                <div class="content-body">
+
                     <div class="gallery">
                         <div class="project">
-                            <h2 class="p-medium bold">Microservicios</h2>
-                            <p>demo: Sistema de microservicios basado en gestión de tareas con colas de Redis</p>
-                            <small class="blue bold">Typescript Js NodeJS Redis Prisma Html Css</small>
+                            <h2>Microservicios</h2>
+                            <p> Sistema de microservicios basado en gestión de tareas con colas de Redis</p>
+                            <small class="c-text-soft">Typescript Js NodeJS Redis Prisma Html Css</small>
                             <img src="./images/microservicios.png" alt="">
-                            <a class="blue-dark" target="_blank" href="https://github.com/fquezadageldres/demo.microservices">
-                                Ir al codigo <i class="bi bi-box-arrow-in-right"></i>
+                            <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/fquezadageldres/demo.microservices">
+                                <i class="bi bi-github" title="Ver codigo"></i><small>Ver el codigo</small>
                             </a>
                         </div>
                         <div class="project">
                             <h2>Tienda Online</h2>
-                            <p>demo: eCommerce online & simple red neuronal convolusional</p>
-                            <small class="orange-dark">Html Css Js Python Django Tensorflow Keras</small>
+                            <p>ECommerce online y simple red neuronal convolusional</p>
+                            <small class="c-text-soft">Html Css Js Python Django Tensorflow Keras</small>
                             <img src="./images/online_store.png" alt="">
-                            <a class="orange-dark" target="_blank" href="https://github.com/fquezadageldres/demo.online-store">
-                                Ir al codigo <i class="bi bi-box-arrow-in-right"></i>
+                            <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/fquezadageldres/demo.online-store">
+                                <i class="bi bi-github" title="Ver codigo"></i><small>Ver el codigo</small>
                             </a>
                         </div>
                     </div>
+
                     <div class="list">
                         <h2>Mas...</h2>
                         <p>Otros proyectos, tests y experimentos</p>
                         <div class="items">
 
                             <div class="item">
-                                <div class="icon"><i class="bi bi-display blue-dark"></i><small class="blue-dark">Front</small></div>
+                                <div class="icon c-title"><i class="bi bi-display"></i><small class="c-title">Front</small></div>
                                 <div class="info">
-                                    <p>.demo Cliente Tienda de Licores</p>
-                                    <small class="blue-dark">Html - Css - Js</small>
-                                    <div class="link blue-dark">
-                                        <a target="_blank" href="https://github.com/fquezadageldres/demo.drinkstore_client">Codigo<i class="bi bi-box-arrow-in-right"></i></a>
-                                        <a target="_blank" href="http://fquezadageldres.com/demo.drinkstore_client">Pagina<i class="bi bi-box-arrow-in-right"></i></a>
+                                    <p>Cliente Tienda de Licores</p>
+                                    <small class="c-text-soft">Html - Css - Js</small>
+                                    <div class="links">
+                                        <a rel="nofollow noopener noreferrer" target="_blank" href="http://fquezadageldres.com/demo.drinkstore_client"><i class="bi bi-globe" title="Ir a la web"></i><small>Ir a la pagina</small></a>
+                                        <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/fquezadageldres/demo.drinkstore_client"><i class="bi bi-github" title="Ver codigo"></i><small>Ver el codigo</small></a>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="item">
-                                <div class="icon"><i class="bi bi-hdd-stack green-dark"></i><small class="green-dark">Back</small></div>
+                                <div class="icon c-title"><i class="bi bi-hdd-stack"></i><small class="c-title">Back</small></div>
                                 <div class="info">
-                                    <p>.demo Servidor Tienda de Licores</p>
-                                    <small class="green-dark">Js - Node - Express - Prisma</small>
-                                    <div class="link green-dark">
-                                        <a target="_blank" href="https://github.com/fquezadageldres/demo.drinkstore_server">Codigo<i class="bi bi-box-arrow-in-right"></i></a>
+                                    <p>Servidor Tienda de Licores</p>
+                                    <small class="c-text-soft">Js - Node - Express - Prisma</small>
+                                    <div class="links">
+                                        <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/fquezadageldres/demo.drinkstore_server"><i class="bi bi-github" title="Ver codigo"></i><small>Ver el codigo</small></a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="item ">
-                                <div class="icon"><i class="bi bi-code-slash orange-dark"></i><small class="orange-dark">Code</small></div>
+                            <div class="item">
+                                <div class="icon c-title"><i class="bi bi-code-slash"></i><small class="c-title">Code</small></div>
                                 <div class="info">
                                     <p>Patron de diseño singleton</p>
-                                    <small class="orange-dark">Js</small>
-                                    <div class="link orange-dark">
-                                        <a target="_blank" href="https://codepen.io/fquezadageldres/pen/jOzjZXo">Codigo<i class="bi bi-box-arrow-in-right"></i></a>
+                                    <small class="c-text-soft">Js</small>
+                                    <div class="links">
+                                        <a rel="nofollow noopener noreferrer" target="_blank" href="https://codepen.io/fquezadageldres/pen/jOzjZXo"><img src="./icons/codepen.svg" title="Ver codigo" alt=""><small>Ver el codigo</small></a>
                                     </div>
                                 </div>
                             </div>
@@ -173,6 +176,40 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div id="works" class="section">
+            <h1 class="c-highlight">Trabajos</h1>
+            <div class="content-body">
+                <div class="years">
+                    <div><p>2018</p></div>
+                    <div><p>2019</p></div>
+                    <div><p>2020</p></div>
+                    <div><p>2021</p></div>
+                    <div><p>2022</p></div>
+                </div>
+                <div class="companies">
+                    <div id="multiex" class="company">
+                        <img src="./images/multiexp.png" title="Multi X" alt="">
+                        <p>Multi X</p>
+                        <small>dic 2017 - jul 2019</small>
+                    </div>
+                    <div id="telsur" class="company">
+                        <img src="./images/telsur.png" title="Grupo GTD Telsur" alt="">
+                        <p>Grupo GTD Telsur</p>
+                        <small>ago 2020 - nov 2021</small>
+                    </div>
+                    <div id="luminux" class="company">
+                        <img src="./images/luminux.png" title="Luminux" alt="">
+                        <p>Luminux</p>
+                        <small>dic 2021 - now</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer" class="section">
+            <p>Created by Francisco Quezada</p>
         </div>
 
     </div>
