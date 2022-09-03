@@ -63,7 +63,7 @@ p, small, a {
 }
 
 .items::-webkit-scrollbar { width: 8px; }
-.items::-webkit-scrollbar-track { background: transparent; }
+.items::-webkit-scrollbar-track { background: var(--border); border-radius: 5px;}
 .items::-webkit-scrollbar-thumb {
     background-color: var(--text);    
     border-radius: 20px;    
@@ -494,12 +494,13 @@ p, small, a {
 #portfolio .items {
     margin: 10px 0;
     overflow-y: scroll;
-    max-height: 270px;
+    max-height: 290px;
     scrollbar-color: transparent;
 }
 
 #portfolio .item {
     border-radius: 0;
+    border-bottom: 1px solid var(--border);
     height: 80px;
 }
 
